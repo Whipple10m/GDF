@@ -1,0 +1,9 @@
+void gdf_init_();
+void gdf_option_();
+void gdf_open_();
+void gdf_write_();
+void gdf_read_();
+void gdf_close_();
+void gdf_exit_();
+void gdf_print();
+void gdf_test();
