@@ -57,10 +57,14 @@ def extract_latex_sections(fortran_file):
                     latex_line = line[1:].strip()
                     if latex_line.startswith('\\usepackage{draftcopy}'):
                         # Replace old DRAFT watermark package with new
-                        latex_line = '\\usepackage{draftwatermark}\n\SetWatermarkText{DRAFT}'
+                        latex_line = '\\usepackage{draftwatermark}'
                     elif latex_line.startswith('\\usepackage[dvips]{graphics}'):
                         # Conflict with class options
-                        latex_line = '\\usepackage{graphics}' 
+                        latex_line = '\\usepackage{graphics}'
+                    elif latex_line.startswith('\\bibliographystyle{tex_inputs:unsrt}'):
+                        latex_line = '\\bibliographystyle{unsrt}'
+                    elif latex_line.startswith('\subsection*{Set run time option}'):
+                        latex_line += '\\label{gdf$option}'
                     latex_content.append(latex_line)
 
 if __name__ == "__main__":
