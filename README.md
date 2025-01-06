@@ -6,7 +6,7 @@
 
 - `gdf_run_t`: Run header providing high-level information on the run configuration, such as the start and end times of the run.
 - `gdf_fr10_t`: 10m frames providing on-the-fly calibration measurements used until mid-1997.
-- `gdf_ev10_t`: 10m events providing measurements of extensive air-showers, and flat-fielding and noise calibration data.
+- `gdf_ev10_t`: 10m events providing measurements of extensive air-showers, as well as flat-fielding and noise calibration measurements.
 - `gdf_track_t`: Information provided by the telescope control (tracking) system giving the position of the telescope and target in the sky.
 - `gdf_hv_t`: Status, voltage settings, and current and voltage measurements made by the high-voltage system.
 - `gdf_ccd_t`: Measurments of the stars in the field of view of an optical CCD monitoring the pointing of the telescope.
