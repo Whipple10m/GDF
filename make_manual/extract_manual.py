@@ -62,8 +62,10 @@ def extract_latex_sections(fortran_file):
                         # Conflict with class options
                         latex_line = '\\usepackage{graphics}'
                     elif latex_line.startswith('\\bibliographystyle{tex_inputs:unsrt}'):
+                        # Eliminate the  "tex_inputs" prefix in bibliographystyle 
                         latex_line = '\\bibliographystyle{unsrt}'
                     elif latex_line.startswith('\subsection*{Set run time option}'):
+                        # Add missing label in the GDF$OPTION section
                         latex_line += '\\label{gdf$option}'
                     latex_content.append(latex_line)
 
