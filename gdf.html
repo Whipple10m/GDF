@@ -1,0 +1,65 @@
+
+<HTML>
+<HEAD>
+<TITLE> Granite Data Format </TITLE>
+<META CONTENT="GDF version 82">
+</HEAD>
+<body bgcolor="white">
+
+<P>&nbsp;</P>
+
+<BLOCKQUOTE><P><IMG SRC="/gif/SB01-1.GIF" WIDTH=640 HEIGHT=5
+X-SAS-UseImageWidth X-SAS-UseImageHeight ALIGN=bottom></P>
+
+<H1>GDF</H1>
+
+<P><IMG SRC="/gif/SB01-1.GIF" WIDTH=640 HEIGHT=5
+X-SAS-UseImageWidth X-SAS-UseImageHeight ALIGN=bottom></P>
+
+<H4><FONT SIZE="+1">Changes</FONT></H4>
+
+<P><FONT SIZE="+1">Version 82 has been modification to make it
+work on Sun Sparc/Solaris.
+</FONT></P>
+
+<P><FONT SIZE="+1">The Fortran90 source code is in
+<A HREF="gdf.for">GDF.FOR</A>.
+and a the example program is
+<A HREF="gdf_example.for">GDF_EXAMPLE.FOR</A>.
+The main LaTeX file is
+<A HREF="gdf.tex">GDF.TEX</A>m which references many other
+files in this
+<A HREF="/gdf/v082/">directory.</A>.
+</FONT>
+
+
+</P>
+
+<H4><FONT SIZE="+1">Installation</FONT></H4>
+
+<P><FONT SIZE="+1">The program </FONT><FONT
+SIZE="+1"><A HREF="/gdf/v076/gdf_example.for"> </FONT><TT><FONT
+SIZE="+1">GDF_EXAMPLE.F90</A></FONT></TT><FONT SIZE="+1"> has several
+purposes. If this program is run without any command line arguments
+it will produce the GDF documentation files in Latex format.
+Compiling the file GDF.TEX with Latex and the converting GDF.DVI
+produces the postscript file GDF.PS. This file will normally be
+available in the same directory as the GDF source code.  </FONT></P>
+
+<P><FONT SIZE="+1">If </FONT><TT><FONT
+SIZE="+1">GDF_EXAMPLE</FONT></TT><FONT SIZE="+1"> is with a file name
+as a single command line argument it will print out the contents of
+an existing data file. This can be used to check that the files
+content is read correctly. For example a command such as
+</FONT><CODE><FONT SIZE="+1"> gdf_example gt008742.fz
+</FONT></CODE><FONT SIZE="+1"> will display the contents of the first
+few events in the data file.</FONT></P>
+
+<P><FONT SIZE="+1">The example program can also perform a GDF
+self-test, which writes a new data file, and then reads it to checks
+that the values read are as expected. The command is
+</FONT><CODE><FONT SIZE="+1"> </FONT></CODE><TT><CODE><FONT
+SIZE="+1">gdf_example test.fz test.fz</FONT></CODE><FONT
+SIZE="+1">.</FONT></TT><FONT SIZE="+1"> The first argument is the
+test file to be created, the second argument the name of the file to
+be read and checked.</FONT></P>
