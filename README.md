@@ -15,4 +15,6 @@ Data is collected by the Whipple data acquisition system, `Granite`, assembled i
 
 In reading the operations are reversed: `ZEBRA` reads and unpacks the physical and logical records, `GDF` recognises and copies the information from the *data banks* into the FORTRAN structures, which can then be used by the data analyis software.
 
+The [GDF manual](https://github.com/Whipple10m/GDF/blob/main/gdf.pdf), included here, provides more information.
+
 This is version 0.83 of GDF.
