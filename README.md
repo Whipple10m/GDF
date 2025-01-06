@@ -1,4 +1,4 @@
-# GDF, the Granite Data Format
+# GDF - GRANITE Data Format
 
 `GDF` is the data format used by the Whipple 10m during the period from 1994 to the end of its life in 2011. `GDF` was written by Joachim Rose from the University of Leeds.
 
