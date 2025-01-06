@@ -1,6 +1,6 @@
 # GDF - GRANITE Data Format
 
-`GDF` is the data format used by the Whipple 10m during the period from 1994 to the end of its life in 2011. `GDF` was written by Joachim Rose from the University of Leeds.
+`GDF` is the data format used by the Whipple 10m during the period from 1994 until the end of its life in 2011. `GDF` was written by Joachim Rose from the University of Leeds.
 
 `GDF` is based on the `ZEBRA` file and memory management system developed by CERN. It provides as a layer that insulates the user from having to interact with `ZEBRA` directly, translating information between the FORTARN structures used by the Whipple DAQ system (and analysis code) and *data banks* stored in the `ZEBRA/FZ` files. `GDF` supports six data structures used to store the Whipple 10m data:
 
