@@ -11,7 +11,7 @@
 - `gdf_hv_t`: Status, voltage settings, and current and voltage measurements made by the high-voltage system.
 - `gdf_ccd_t`: Measurments of the stars in the field of view of an optical CCD monitoring the pointing of the telescope.
 
-Data is collected by the Whipple data acquisition system, `Granite`, assembled into the relevant FORTAN data structure and passed to the `GDF` library, which copies the data into the `ZEBRA` *data banks*, which are named `'RUUR'`, `'FTTF'`, `'ETTE'`, `'TRRT'`, `'HVVH'`, and `'CCCC'` (the palendromic names making it easier to recognise the bank names on little-endian or big-endian systems). `GDF` then calls `ZEBRA`, which marshalls the data into logical and physical records, proving redundant header information that can be used to resychnoise the datastream if necessary.
+Data is collected by the Whipple data acquisition system, `Granite`, assembled into the relevant FORTAN data structure and passed to the `GDF` library, which copies the data into the `ZEBRA` *data banks*. The banks for the Whipple data are named `'RUUR'`, `'FTTF'`, `'ETTE'`, `'TRRT'`, `'HVVH'`, and `'CCCC'`, the palendromic names making it easier to recognise the bank names on little-endian or big-endian systems. `GDF` then calls `ZEBRA`, which marshalls the data into logical and physical records, proving redundant header information that can be used to resychnoise the datastream if necessary.
 
 In reading the operations are reversed: `ZEBRA` reads and unpacks the physical and logical records, `GDF` recognises and copies the information from the *data banks* into the FORTRAN structures, which can then be used by the data analyis software.
 
